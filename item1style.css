@@ -1,0 +1,364 @@
+
+*{
+    padding: 0;
+   margin: 0;
+   font-family: 'Courier New', Courier, monospace;
+}
+body{
+    direction: rtl;
+  background-color:   rgb(218, 202, 184);
+height: 100vh;
+width: 100%;
+display: flex;
+
+}
+.container{
+    height: 100%;
+    width: 100%;  
+    border-radius: 20px;
+}
+ 
+.befornav{
+    padding: 5px 0;
+    position: relative;
+    margin-bottom: 20px;
+    background-color: #000;
+
+}
+
+.befornavinner{
+    overflow: hidden;
+}
+.befornavinner ul{
+ padding: 5px 0;
+list-style: none;
+display: flex;
+white-space: nowrap;
+margin: 0;
+
+}
+.befornavinner ul li{
+    animation-name:x;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite
+   
+}
+@keyframes x{
+    0%{
+text-indent: 100%;
+    }
+    100%{
+text-indent: -100%;
+    }
+}
+
+a {
+    text-decoration: none;
+    transition: color .2s;
+}
+ul, li {
+   margin-left: 90px;
+    padding: 0;
+    list-style: none;
+}
+.helpbutton{
+    margin: 10px;
+}
+.personshep{
+    background-color:   rgb(218, 202, 184);
+ border: 0;
+ margin: 10px;
+}
+nav{
+    display: flex;
+    margin: auto;
+     padding: 10px 0; 
+    align-items: center;
+    display: flex;
+   margin-bottom: 5%;
+
+}
+nav .logo{
+    margin-left: 40px;
+    color: rgb(11, 15, 15);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 5px;
+
+}
+
+
+nav ul li{
+display: inline-block;
+    margin: 0;
+  
+}
+nav ul li a{
+color: #000;
+text-decoration: none;
+font-size: 20px;
+font-weight: 500;
+}
+nav ul li a:hover{
+
+  color: rgb(71, 77, 82);
+}
+.content{
+display: flex;
+
+align-items: center;
+height: 70%;
+width: 100%;
+padding: 30px;
+margin-top: 50px;
+
+ /* justify-content: space-between;   */
+
+
+}
+
+.content .text{
+    color: #000;
+    width: 600px;
+ 
+}
+.content .text h2{
+    font-size: 25px;
+    width: 40px;
+    font-weight: 700;
+  
+}
+.content .text p{
+    padding: 20px;
+    font-size: 18px;
+}
+
+.content .bo{
+    display: grid;
+   
+    margin-left: 20px;
+}
+.content .bo1{
+     
+      grid-column: 1/2;
+ 
+}
+.content .bo2{
+    grid-column: 2/3;
+ 
+      width: 300px;
+    
+}
+.s-quantity-input-container {
+    display: flex;
+    height: 2.5rem;
+    align-items: stretch; 
+    justify-content: flex-end; /* أو space-between */
+    border-radius: .375rem;
+    /* border-width: 1px; */
+    font-size: .875rem;
+    line-height: 1.25rem;
+    gap: 0; /* وجود gap هنا قد يسبب تفرقة */
+   
+}
+.a2{margin-top: 30px;}
+.s-quantity-input-button,
+.s-quantity-input-input {
+    width: 2.5rem; /* تحديد عرض موحد */
+    margin: 0; /* إزالة الهوامش */
+    padding: 0; /* إزالة الحواف الداخلية */
+    background-color:   rgb(218, 202, 184);
+
+}
+.content .bo button{
+    background-color: #000;
+    color: aliceblue;
+font-size: 20px;
+padding: 6px 10px;
+border-radius: 10px;
+border: 2px solid transparent;
+width: 200px;
+
+}
+.content button:hover{
+background-color: transparent;
+border-color: white;
+color: white;
+cursor: pointer;
+}
+.content .image {
+   width: 400px;
+   margin-left: 400px;
+ 
+}
+.content .image img{
+margin-right: 100px; 
+
+
+width: 500px;
+    border-radius: 20px;
+    height: 600px;
+}
+h1 {
+    font-family: "imjed", sans-serif !important;
+}
+span{
+    font-size: 25px;
+}
+
+ .contrnerofbox{
+     max-width: 1100px; 
+    display: flex;
+    
+     padding: 20px;
+    display: grid;
+    margin-top: 300px;
+column-gap: 1px;
+    
+    } 
+   
+    
+    .contrnerofbox .box1,
+    .contrnerofbox .box2,
+    .contrnerofbox .box3 {
+        width: 220px;
+        height: 180px; 
+          /* box-shadow: 0 2px 10px rgba(0,0,0,0.1); Shadow for some depth */
+        /* background-color: rgb(247, 244, 241); */
+        border-left: 1px solid rgb(100, 98, 98);
+        /* border-radius: 10px; Rounded corners */
+        padding: 20px; /* Inner padding */
+     
+        text-align: center; /* Center text if needed */
+    }
+    .contrnerofbox .com{
+        grid-column: 1/4;
+    }
+    .contrnerofbox .box1 .images,
+    .contrnerofbox .box2 .images,
+    .contrnerofbox .box3 .images{
+margin: 5px;
+height: 100px;
+border-radius: 50%;
+
+
+    }
+    .contrnerofbox .box1 img,
+    .contrnerofbox .box2 img,
+    .contrnerofbox .box3 img{
+margin: 5px;
+margin-bottom: 10px;
+margin-top: 0;
+height: 100%;
+
+border-radius: 50%;
+object-fit: cover;
+border: 2px solid #000;
+width: 100px;
+
+    } 
+    
+    .botte button{
+        background-color: #000;
+        color: aliceblue;
+    font-size:10px;
+    padding: 2.5px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* border: 2px solid transparent; */
+    }
+    .botte button:hover{
+        cursor: pointer;
+    }
+    .checked {
+        color: orange;
+      }
+
+      .conectinformation{
+display: grid;
+/* background-color: rgb(207, 199, 191); */
+margin-top: 300px;
+height: 200px;
+color: #000;
+
+      }
+      .contact{
+        grid-column: 2/3;
+      }
+.importantlink{
+   grid-column: 3/4; 
+}
+.logo2{
+    grid-column: 1/2;
+}
+.conectinformation a{
+color: #0a0707;
+}
+
+
+.logo2 .logo1{
+ color: #0a0707;
+text-decoration: none;
+font-size: 30px;
+font-weight: 700;
+grid-column: 3/4;
+
+}
+.cart:hover{
+    cursor: pointer;
+}
+
+
+ 
+  .topnav .search-container {
+    float: right;
+ visibility: hidden;
+ 
+  }
+  
+  .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  
+  }
+  .search-container:hover{
+visibility: visible;
+  }
+  
+  .topnav .search-container button {
+    float: left;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-left: 16px;
+    background-color:   rgb(218, 202, 184);
+    font-size: 17px;
+    border: 20px;
+    cursor: pointer;
+    visibility:visible;
+  }
+  
+  .topnav .search-container button:hover {
+    background: #ccc;
+
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav .search-container {
+      float: none;
+    }
+    .topnav a, .topnav input[type=text], .topnav .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid #ccc;  
+    }
+  }
